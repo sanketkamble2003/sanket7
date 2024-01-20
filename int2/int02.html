@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Survey Form</title>
+
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">
+                Task2- Validating a Survey Form
+            </h1>
+            <p id="description">
+                We apperciate you for taking the time to complete this survey
+            </p>
+        </header>
+        <form  name ="my_form" action="" onsubmit=" return validate()">
+
+            <!-- Name section -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" class="formControl" placeholder="Enter your name">
+            </div>
+            <!-- end of Name section -->
+
+            <!-- Type Email section -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" class="formControl" placeholder="Enter your Email">
+            </div>
+            <!-- end of Email section -->
+
+            <!-- Phone Number section -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" id="phone_number" class="formControl" placeholder="Enter your phone number" >
+            </div>
+            <!-- end of Number section -->
+
+            <!--  address section -->
+            <div class="form-group">
+                <label for="address">Address <span class="clue"></span></label>
+                <input type="text" name="address" id="address" class="formControl" placeholder="Enter your address">
+            </div>
+            <!--  end of number section -->
+
+            <!-- select section -->
+            <div class="form-group">
+                <p id="quest">Which option best describe your current role</p>
+                <select name="role" required id="dropdown" class="formControl">
+                    <option value="Select current role" >Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="job">Job</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <!-- end of select section -->
+
+            <!-- radio button section -->
+            <div class="form-group">
+                <p id="quest">How you come to know about WEBHUB ?</p>
+                <label for="">
+                    <input type="radio"  name="source" value="friends"
+                    class="inputRadio"
+                    > Friends
+                </label>
+                <label for="">
+                    <input type="radio"  name="source" value="tv-ads"
+                    class="inputRadio"
+                    >TV Ads
+                </label>
+                <label for="">
+                    <input type="radio"  name="source" value="social-media"
+                    class="inputRadio"
+                    > Social Media
+                </label>
+                <label for="">
+                    <input type="radio"  name="source" value="newspaper"
+                    class="inputRadio"
+                    > Newspaper
+                </label>
+                <label for="">
+                    <input type="radio"  name="source" value="other"
+                    class="inputRadio"
+                    > Other
+                </label>
+            </div>
+            <!-- end of radio button -->
+
+            <!-- Checkbox section -->
+            <div class="form-group">
+                <p id="quest">Would you like to see improved ? </p>
+                <label for="">
+                    <input type="checkbox" name="option" class="checkbox" value="front-end-dev"> Front-end Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="option" class="checkbox" value="back-end-dev"> Back-end Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="option" class="checkbox" value="app-dev">  Android App Developer
+                </label>
+                <label for="">
+                    <input type="checkbox" name="option" class="checkbox" value="soft-engineering"> Software Engineering
+                </label>
+                <label for="">
+                    <input type="checkbox" name="option" class="checkbox" value="other"> Other
+                </label>
+            </div>
+            <!-- End of checkbox section -->
+
+            <!-- Textarea section -->
+            <div class="form-group">
+                <p id="quest">Describe your experience</p>
+                <textarea name="feedback"  cols="30" rows="5"  id="feedback" class="textarea" placeholder="Enter your feedback here..."></textarea>
+            </div>
+            <!-- end of Textarea section -->
+
+            <!-- submit button -->
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn">Submit</button>
+            </div>
+            <!-- end of submit button -->
+
+        </form>
+    </div>
+</body>
+</html>
